@@ -11,7 +11,7 @@ $con = mysqli_connect('localhost', 'root', '','car');
 	$date2 = $_POST['date2'];
 	if(empty($date1) || empty($date2))
     {
-        header("Location: show_cost.php?error=Fill up the dates!");
+        header("Location: ../show_cost.php?error=Fill up the dates!");
 
         exit();
     }
@@ -29,16 +29,16 @@ $data = mysqli_fetch_array($rs);
 if($data)
 {
 	if(!$data[0]==0)
-	{		header("location: show_cost.php?error=Cost = $data[0] taka");
+	{		header("location: ../show_cost.php?error=Cost = $data[0] taka");
 	}	
 	else
-	{		header("location: show_cost.php?error=0 cost on that day.");
+	{		header("location: ../show_cost.php?error=0 cost on that day.");
 	}
 }
 
 else
 {
-	header("location: show_cost.php?error=No cost found!");
+	header("location: ../show_cost.php?error=No cost found!");
 }
 
 ?>

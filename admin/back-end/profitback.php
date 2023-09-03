@@ -29,11 +29,11 @@ $data = mysqli_fetch_array($rs);
 if($data)
 {
 	//printting on profit.php array's first value
-	header("location: profit.php?error=Total Profit = $data[0] taka");
+	header("location: ../profit.php?error=Total Profit = $data[0] taka");
 }
 else
 {
-	header("location: profit.php?error=No profit found!");
+	header("location: ../profit.php?error=No profit found!");
 }
 
 ?>

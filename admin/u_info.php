@@ -57,8 +57,8 @@ if (mysqli_connect_errno()) {
                 <td>" . $row["u_order"] . "</td><td>" . $row["order_date"] . "</td><td>" . $row["start_from"] . "</td>
                 <td>" . $row["stop_to"] . "</td><td>" . $row["type"] . "</td><td>" . $row["notes"] . "</td>
                 <td>" . $row["curr_date"] . "</td>
-                <td>" . "<a href=" . "accept.php" . "?order=" . $_SESSION["id"] . ">Accept</a>" . "</td>
-                <td>" . "<a href=" . "reject.php" . "?order=" . $_SESSION["id"] . ">Reject</a>" . "</td>
+                <td>" . "<a href=" . "./back-end/accept.php" . "?order=" . $_SESSION["id"] . ">Accept</a>" . "</td>
+                <td>" . "<a href=" . "./back-end/reject.php" . "?order=" . $_SESSION["id"] . ">Reject</a>" . "</td>
                 </tr>";
             }
             ?>

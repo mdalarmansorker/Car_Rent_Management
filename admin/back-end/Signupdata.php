@@ -17,7 +17,7 @@ $con = mysqli_connect('localhost', 'root', '','car');
 	//Checking the datas if input is empty 
 	if(empty($Name) || empty($Email) || empty($Password))
     {
-        header("Location: Sign_up.php?error=Fill up the form");
+        header("Location: ../Sign_up.php?error=Fill up the form");
 
         exit();
     }
@@ -29,7 +29,7 @@ $con = mysqli_connect('localhost', 'root', '','car');
 		//run other code otherwise
 		if($result = mysqli_fetch_assoc($e))
 		{
-			header("location: Sign_up.php?error=Email Already Exist");
+			header("location: ../Sign_up.php?error=Email Already Exist");
 			exit();
 		}
 // database insert SQL code
@@ -47,11 +47,11 @@ if($rs)
 	echo "<br>";
 	echo "Now you can log in to your account.";
 	echo "<br>";*/
-	header("location: Sign_up.php?error=Sign up completed");
+	header("location: ../Sign_up.php?error=Sign up completed");
 }
 else
 {
-	header("location: Sign_up.php?error=Something went wrong, please try again.$Phone");
+	header("location: ../Sign_up.php?error=Something went wrong, please try again.$Phone");
 }
 
 ?>

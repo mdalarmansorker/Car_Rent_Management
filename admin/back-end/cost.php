@@ -12,7 +12,7 @@ $con = mysqli_connect('localhost', 'root', '','car');
 	$price = $_POST['price'];
 	if(empty($date) || empty($reason) || empty($price))
     {
-        header("Location: hello.php?error=Fill up the form");
+        header("Location: ../hello.php?error=Fill up the form");
 
         exit();
     }
@@ -25,11 +25,11 @@ $rs = mysqli_query($con, $sql);
 
 if($rs)
 {
-	header("location: hello.php");
+	header("location: ../hello.php");
 }
 else
 {
-	header("location: hello.php?error=Something wrong, Please try again.");
+	header("location: ../hello.php?error=Something wrong, Please try again.");
 }
 
 ?>

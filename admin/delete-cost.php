@@ -55,7 +55,7 @@ if(isset($_POST["id"])/* && !empty($_POST["id"])*/){
         }
     </style>
 </head>
-<body style="background-image: url('13652.jpg'); background-size: cover; background-repeat: no-repeat;">
+<body style="background-image: url('../image/13652.jpg'); background-size: cover; background-repeat: no-repeat;">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">

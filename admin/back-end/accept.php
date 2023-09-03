@@ -36,6 +36,6 @@ header("Location: reject.php?order=$value");
 
 
 
-header("Location: u_info.php?accepted=$value");
+header("Location: ../u_info.php?accepted=$value");
 exit();
 ?>

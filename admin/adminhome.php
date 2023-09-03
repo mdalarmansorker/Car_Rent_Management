@@ -1,23 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head><title>Admin</title>
-    <style>
-            .button {
-    background-color: rgb(2, 109, 112);
-    border: none;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    padding: 50px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 4px;
-    cursor: pointer;
-  }
-        </style>
+    <link rel="stylesheet" href="../css/adminhome.css">
         </head>
-    <body style="background-image: url('cars3.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <body style="background-image: url('../image/cars3.jpg'); background-size: cover; background-repeat: no-repeat;">
         <h1 style="background-color: cadetblue;"><center>Car Rent Management</center></h1>
     <center>
     <?php if (isset($_GET['A'])) { ?>

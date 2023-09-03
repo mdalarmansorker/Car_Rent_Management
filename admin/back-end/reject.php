@@ -1,5 +1,5 @@
 <?php
-$value = $_GET["user"];
+$value = $_GET["order"];
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
@@ -10,15 +10,14 @@ $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 if (mysqli_connect_errno()) {
     die("Database connection failed! " . mysqli_connect_errno() . " (mysqli_conncet_errorno())");
 }
-
-$q = "UPDATE shedule_info SET status = 'Done' WHERE u_id_i = $value";
+$q = "DELETE FROM users_data WHERE u_id = $value";
 $query_res = mysqli_query($connection, $q);
 
 if (!$query_res) {
-    die("Database query failed. For Status");
+    die("Database query failed. ");
 }
 mysqli_close($connection);
 
-header("Location: shedule_details.php?status=$value");
+header("Location: ../u_info.php?rejected=$value");
 exit();
 ?>

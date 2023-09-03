@@ -27,7 +27,6 @@
   <div class="main">
       <a href="adminhome.php"><button type="button" class="btn btn-primary first" style="width: 700px; margin-bottom: 30px;"><b>Welcome to our Car Rent Site.</b></button></a>
       <p>This is Shedule Checking Page</p>
-      <p>You will get a phone to confirm the order. Or You can contact us:</p>
       <div class="btn-group" role="group" aria-label="Basic example" style="margin-left: 130px;">
       <a href="shedule_details.php"><a href="u_info.php"><button type="button" class="btn btn-warning">Go To Pending Requests</button></a>
       <a href="shedule_details.php"><button type="button" class="btn btn-danger">Go To Schedule Details</button></a>

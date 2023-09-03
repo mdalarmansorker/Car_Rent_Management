@@ -9,7 +9,7 @@ $value = $_GET['user'];
 <body>
 
 
-    <form action="addprice_back.php" method="post">
+    <form action="./back-end/addprice_back.php" method="post">
         <fieldset>
             <legend>Price Adding For Perticular User</legend>
             User ID: <input type="number" name="id" value="<?php echo $value ?>"><br>

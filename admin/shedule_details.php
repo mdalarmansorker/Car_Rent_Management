@@ -60,7 +60,7 @@ if (mysqli_connect_errno()) {
                 <td>" . $row["ordering_date"] . "</td><td>" . $row["price"] . "</td>
                 <td>" . $row["OrderStatus"]. "</td>
                 <td>" . "<a href=" . "addprice.php" . "?user=" . $_SESSION["id"] . ">Price Add</a>" . "</td>
-                <td>" . "<a href=" . "doneStatus.php" . "?user=" . $_SESSION["id"] . ">Done Status</a>" . "</td>
+                <td>" . "<a href=" . "./back-end/doneStatus.php" . "?user=" . $_SESSION["id"] . ">Done Status</a>" . "</td>
                 </tr>";
             }
             ?>

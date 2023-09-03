@@ -1,6 +1,6 @@
 <?php session_start();
 $errors = array();
-require_once("vailidation_functions.php");
+require_once("../validation/vailidation_functions.php");
 
 if (isset($_POST["submit"])) {
     $name = htmlspecialchars(trim($_POST["name"]));
@@ -71,8 +71,8 @@ if (isset($_POST["submit"])) {
     <title>Booking Car</title>
 </head>
 
-    <body style="font-family: 'Times New Roman', Times, serif; border-radius: 1ch; color:rgb(255, 255, 255); background-image: url('car7.jpg'); background-size: cover; background-repeat: no-repeat;">
-    <header>
+    <body style="font-family: 'Times New Roman', Times, serif; border-radius: 1ch; color:rgb(255, 255, 255); background-image: url('../image/car7.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <header align="center">
         <h3>Welcome to our Car Rent Site.</h3>
         <p>Fill This Form to Order Vehicle From our Company</p>
         <p>You will get a phone to confirm the order. Or You can contact us:</p>
