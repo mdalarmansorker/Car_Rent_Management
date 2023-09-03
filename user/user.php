@@ -26,7 +26,7 @@
 
 <body style="background-color: rgb(62, 75, 95);">
     <div class="sch" align="center">
-        <a href="../home.html"><button type="button" class="btn btn-primary first" style="width: 700px;"><b>Welcome to our Car Rent Site.</b></button></a>
+        <a href="../index.html"><button type="button" class="btn btn-primary first" style="width: 700px;"><b>Welcome to our Car Rent Site.</b></button></a>
         <p>Fill This Form to Order Vehicle From our Company</p>
         <p>You will get a phone to confirm the order. Or You can contact us:</p>
         <p>Contact Number: +8801700000011111</p>

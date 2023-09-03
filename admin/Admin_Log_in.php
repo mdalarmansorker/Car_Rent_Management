@@ -11,7 +11,7 @@ if(isset($_SESSION['User']) && isset($_SESSION['pass']) && isset($_SESSION['emai
     <link rel="stylesheet" href="../css/admin.css">
 </head>
     <body style="font-family: 'Times New Roman', Times, serif; border-radius: 1ch; color:white; background-image: url('../image/59.jpg'); background-size: cover; background-repeat: no-repeat;">
-    <h1 style="text-align: center; background-color: rgb(255, 255, 255);color:white;"><a href="Home.html" class="button">Car Rent Management</a></h1>
+    <h1 style="text-align: center; background-color: rgb(255, 255, 255);color:white;"><a href="../index.html" class="button">Car Rent Management</a></h1>
     <br><br>
     <table border="5" bordercolor="white"><tr><th>
 <div class="container">
